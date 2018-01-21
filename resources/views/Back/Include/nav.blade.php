@@ -16,9 +16,14 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="#">
+                                <i class="ti-user"></i> Welcome {{Auth::user()->Username}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('admin-setting')}}">
                                 <i class="ti-panel"></i>
-                                <p>Stats</p>
+                                <p>Settings</p>
                             </a>
                         </li>
                         <li class="dropdown">
@@ -34,6 +39,12 @@
                                 <li><a href="#">Notification 3</a></li>
                                 <li><a href="#">Notification 4</a></li>
                             </ul>
+                        </li>
+                        <li>
+                            <a href="{{route('logout')}}">
+                                <i class="ti-shift-right"></i>
+                                <p>LogOut</p>
+                            </a>
                         </li>
                     </ul>
 

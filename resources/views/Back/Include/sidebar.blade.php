@@ -11,34 +11,34 @@
 
             <div class="sidebar-wrapper">
                 <div class="logo">
-                    <a href="http://www.creative-tim.com" class="simple-text">
+                    <a href="{{route('admin')}}" class="simple-text">
                         Businessmantra
                     </a>
                 </div>
 
                 <ul class="nav">
                     <li class="active">
-                        <a href="dashboard.html">
+                        <a href="{{route('admin')}}">
                             <i class="ti-panel"></i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li>
-                        <a href="user.html">
+                        <a href="{{route('admin-user')}}">
                             <i class="ti-user"></i>
                             <p>Users</p>
                         </a>
                     </li>
                     <li>
-                        <a href="table.html">
+                        <a href="{{route('user-add')}}">
                             <i class="ti-plus"></i>
                             <p>Add User</p>
                         </a>
                     </li>
                     <li>
-                        <a href="typography.html">
-                            <i class="ti-reload"></i>
-                            <p>Update User</p>
+                        <a href="{{route('user-update')}}">
+                            <i class="ti-write"></i>
+                            <p>Add Pages</p>
                         </a>
                     </li>
                     <li>
@@ -48,7 +48,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="maps.html">
+                        <a href="{{route('client-detail')}}">
                             <i class="ti-save"></i>
                             <p>Client Details</p>
                         </a>

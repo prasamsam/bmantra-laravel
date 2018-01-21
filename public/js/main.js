@@ -128,8 +128,8 @@ $(document).ready(function() {
 		}
 	});
 	jQuery('form').submit(function(event) {
-		event.preventDefault();
-		return false;
+		//event.preventDefault();
+		//return false;
 	});
 	jQuery('.tg-search button.close').on('click', function(){
 		jQuery(this).parents('.tg-search').removeClass('open');

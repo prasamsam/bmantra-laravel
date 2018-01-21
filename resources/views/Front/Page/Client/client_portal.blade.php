@@ -384,18 +384,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 pull-left">
                     <aside id="tg-sidebar" class="tg-sidebar">
-                        <div role="navigation" id="usernavigation"
-                             class=" tg-widget tg-widgetmenu collapse navbar-collapse tg-navigation">
-                            <ul>
-                                <li><a href="eventdetail.html">Profit Planning</a></li>
-                                <li><a href="eventdetail-v2.html">Mortgage Advisor</a></li>
-                                <li><a href="eventdetail.html">Thought Leadership</a></li>
-                                <li><a href="eventdetail-v2.html">Strategic Planning</a>
-                                </li>
-                                <li><a href="eventdetail.html">Financial Projections</a>
-                                </li>
-                            </ul>
-                        </div>
+
                         <div class="tg-widget tg-widgetbrochure">
                             <a href="javascript:void(0);">Company Brochure</a>
                         </div>

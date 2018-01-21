@@ -171,6 +171,8 @@ return [
         /*
          * Application Service Providers...
          */
+        \App\Providers\clientPasswordReset::class,
+        \App\Providers\adminPasswordReset::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,

@@ -41,12 +41,12 @@
                                 </ul>
                             </div>
                             <div id="loginbtn" class="tg-themedropdown tg-languagesdropdown">
-                                <a href="login.html" class="tg-btndropdown">
+                                <a href="{{route('user-login')}}" class="tg-btndropdown">
                                     <span>log In</span>
                                 </a>
                             </div>
                             <div id="signupbtn" class="tg-themedropdown tg-languagesdropdown">
-                                <a href="signup.html" class="tg-btndropdown">
+                                <a href="{{route('signup')}}" class="tg-btndropdown">
                                     <span>Sign Up</span>
                                 </a>
                             </div>
@@ -60,7 +60,7 @@
                     <div class="col-sm-12 col-xs-12">
                         <div class="tg-navigationarea">
                             <strong class="tg-logo">
-                                <a href="index.html"><img src="images/logo.png" alt="image description"></a>
+                                <a href="{{route('home')}}"><img src="images/logo.png" alt="image description"></a>
                             </strong>
                             <nav id="tg-addnav" class="tg-addnav">
                                 <ul>
@@ -135,20 +135,20 @@
                                 <div id="tg-navigation" class="collapse navbar-collapse tg-navigation">
                                     <ul>
                                         <li class="current-menu-item">
-                                            <a href="index.html">Home</a>
+                                            <a href="{{route('home')}}">Home</a>
                                         </li>
                                         <li>
-                                            <a href="aboutoverview.html">About</a>
+                                            <a href="{{route('about')}}">About</a>
                                         </li>
                                         <li>
-                                            <a href="servicedetail.html">Services</a>
+                                            <a href="{{route('services')}}">Services</a>
                                         </li>
                                         <li>
-                                            <a href="caselist.html">cases</a>
+                                            <a href="{{route('cases')}}">cases</a>
                                         </li>
-                                        <li><a href="contactus.html">Contact</a></li>
-                                        <li class="nav hidden-lg hidden-md hidden-sm"><a href="signup.html">Sign Up</a></li>
-                                        <li class="nav hidden-lg hidden-md hidden-sm"><a href="login.html">Log In</a></li>
+                                        <li><a href="{{route('contact')}}">Contact</a></li>
+                                        <li class="nav hidden-lg hidden-md hidden-sm"><a href="{{route('signup')}}">Sign Up</a></li>
+                                        <li class="nav hidden-lg hidden-md hidden-sm"><a href="{{route('user-login')}}">Log In</a></li>
                                     </ul>
                                 </div>
                             </nav>

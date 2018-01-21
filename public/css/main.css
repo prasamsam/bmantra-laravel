@@ -5562,9 +5562,15 @@ ul.tg-serviceinfo li#tg-bnamesearch{
 .searchservice{
 	margin-top: 2%;
 }
-.packagesection{
+.packagesection {
 	margin-bottom: 3%;
 }
+	/*admin login*/
+	.jumbotron-login{
+		margin-top:25%;
+		background-color: #b9b9b9;
+	}
+
 
 
 

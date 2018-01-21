@@ -10,10 +10,12 @@
 
                         <div class="tg-navigationarea">
                             <strong class="tg-logo">
-                                <a href="userportal.html"><img src="images/logo.png" alt="image description"></a>
+                                <a href="{{route('userportal')}}"><img src="images/logo.png"
+                                                                       alt="image description"></a>
                             </strong>
                             <nav id="tg-addnav" class="tg-addnav">
                                 <ul>
+                                    <li><h3>Welcome, {{Auth::guard('client')->user()->firstname}}</h3></li>
                                     <li id="shoppingcart">
                                         <a href="javascript:void(0);"><span class="tg-badge">3</span><i
                                                     class="lnr lnr-cart"></i></a>
@@ -75,7 +77,8 @@
                                         <ul class="dropdown-menu dropdown-menu-right userdropdown"
                                             aria-labelledby="userdropdown">
                                             <li class="col-lg-pull-1"><a href="#">Change Profile Picture</a></li>
-                                            <li><a href="login.html">Log Out</a></li>
+                                            <li><a href="{{route('client-setting')}}">Settings</a></li>
+                                            <li><a href="{{route('client-logout')}}">Log Out</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -93,13 +96,9 @@
                                 <div id="tg-navigation"
                                      class="tg-widget tg-widgetmenu collapse navbar-collapse tg-navigation">
                                     <ul class="nav hidden-lg hidden-md hidden-sm">
-                                        <li><a href="eventdetail.html">Profit Planning</a></li>
-                                        <li><a href="eventdetail-v2.html">Mortgage Advisor</a></li>
-                                        <li><a href="eventdetail.html">Thought Leadership</a></li>
-                                        <li><a href="eventdetail-v2.html">Strategic Planning</a>
-                                        </li>
-                                        <li><a href="eventdetail.html">Financial Projections</a>
-                                        </li>
+                                        <li><a href="eventdetail.html">Change Profile Picture</a></li>
+                                        <li><a href="eventdetail-v2.html">Settings</a></li>
+                                        <li><a href="eventdetail.html">Log Out</a></li>
                                     </ul>
                                 </div>
                             </nav>
