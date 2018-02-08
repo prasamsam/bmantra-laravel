@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\AdminBackHistory;
+use App\Http\Middleware\clientRouteProtect;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -54,6 +55,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
+        'client.route.protect' => \App\Http\Middleware\clientRouteProtect::class,
         'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,

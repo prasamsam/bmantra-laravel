@@ -15,17 +15,17 @@
                             <table class="table table-striped">
                                 <thead>
                                 <tr>
-                                <th>#</th>
-                                <th>Username</th>
-                                <th>Email</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Address</th>
-                                <th>City</th>
-                                <th>Country</th>
-                                <th>Postcode</th>
-                                <th>Status</th>
-                                <th>Action</th>
+                                    <th>#</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Address</th>
+                                    <th>City</th>
+                                    <th>Country</th>
+                                    <th>Postcode</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -42,9 +42,11 @@
                                         <td>{{$user->Postcode}}</td>
                                         <td>
                                             @if($user->status==0)
-                                                <a href="" class="btn btn-primary btn-fill btn-xs">Enable</a>
+                                                <a href="" data-type="enable" data-id="{{$user->id}}"
+                                                   class="btn-user-update btn btn-primary btn-fill btn-xs"> Enable</a>
                                             @else
-                                                <a href="" class="btn btn-warning btn-fill btn-xs">Disable</a>
+                                                <a href="" data-type="disable" data-id="{{$user->id}}"
+                                                   class="btn-user-update btn btn-warning btn-fill btn-xs"> Disable</a>
                                             @endif
                                         </td>
                                         <td>
@@ -53,7 +55,7 @@
                                     </tr>
                                 @empty
                                     <tr>
-                                        <td colspan="6" align="center">No Users Found! <a href=""
+                                        <td colspan="6" align="center">No Users Found! <a href="{{route('user-add')}}"
                                                                                           class="btn btn-info btn-fill btn-wd">Add
                                                 User</a></td>
                                     </tr>

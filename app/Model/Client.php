@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class Client extends Authenticatable
 {
     protected $guard='client';
-    public $fillable=['Firstname','Middlename','Lastname','Email','password'];
+    public $fillable=['Firstname','Middlename','Lastname','Email','password','image'];
 
     public function getFirstNameAttribute($value){
         return ucfirst($value);

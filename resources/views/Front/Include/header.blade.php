@@ -141,9 +141,6 @@
                                             <a href="{{route('about')}}">About</a>
                                         </li>
                                         <li>
-                                            <a href="{{route('services')}}">Services</a>
-                                        </li>
-                                        <li>
                                             <a href="{{route('cases')}}">cases</a>
                                         </li>
                                         <li><a href="{{route('contact')}}">Contact</a></li>

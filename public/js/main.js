@@ -350,4 +350,14 @@ $(document).ready(function() {
 	},function(){
 		jQuery(this).removeClass('tg-flip');
 	});
+
+/*---------AJAX IMAGE UPLOAD-------------*/
+
+	$('#picsubmit').click(function(e){
+
+		var $this = $(this);
+		var sendUrl = url+'/userportal/upload-picture';
+
+	});
+
 });

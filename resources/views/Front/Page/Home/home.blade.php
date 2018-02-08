@@ -3,76 +3,33 @@
 @section('content')
 
     <div id="tg-homeslidervtwo" class="tg-homeslider tg-homeslidervtwo">
-        <div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
-             style="background:url(images/slider/img-03.jpg) no-repeat scroll 0 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <div class="tg-slidercontent">
-                            <h1 class="pogoSlider-slide-element" data-in="flipX" data-out="flipX" data-duration="800">
-                                Business And Financial<span>Planning Services</span></h1>
-                            <div class="tg-description pogoSlider-slide-element" data-in="slideLeft"
-                                 data-out="slideRight" data-duration="1800">
-                                <p>Helping businesses to find best solutions<span>with over 12 year of experience</span>
-                                </p>
-                            </div>
-                            <div class="tg-btns pogoSlider-slide-element" data-in="slideUp" data-out="slideUp"
-                                 data-duration="800">
-                                <a class="tg-btn" href="javascript:void(0);">Sign Up</a>
-                                <a class="tg-btn tg-active" href="javascript:void(0);">Log In</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
-             style="background:url(images/slider/img-02.jpg) no-repeat scroll 0 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <div class="tg-slidercontent">
-                            <h1 class="pogoSlider-slide-element" data-in="flipX" data-out="flipX" data-duration="800">
-                                Business And Financial<span>Planning Services</span></h1>
-                            <div class="tg-description pogoSlider-slide-element" data-in="slideLeft"
-                                 data-out="slideRight" data-duration="1800">
-                                <p>Helping businesses to find best solutions<span>with over 12 year of experience</span>
-                                </p>
-                            </div>
-                            <div class="tg-btns pogoSlider-slide-element" data-in="slideUp" data-out="slideUp"
-                                 data-duration="800">
-                                <a class="tg-btn" href="javascript:void(0);">Sign Up</a>
-                                <a class="tg-btn tg-active" href="javascript:void(0);">Log In</a>
+        @foreach($SlideData as $key => $slider)
+            <div class="pogoSlider-slide" data-transition="fade" data-duration="1500" data-slide-to="{{$key}}"
+                 style="background:url({{url('/images/slider/'.$slider->sliderimage)}}) no-repeat scroll 0 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                            <div class="tg-slidercontent">
+                                <h1 class="pogoSlider-slide-element" data-in="flipX" data-out="flipX"
+                                    data-duration="800">
+                                    {{$slider->sliderdescription}}</h1>
+                                <div class="tg-description pogoSlider-slide-element" data-in="slideLeft"
+                                     data-out="slideRight" data-duration="1800">
+                                    <p>{{$slider->slidesummary}}</p>
+                                </div>
+                                <div class="tg-btns pogoSlider-slide-element" data-in="slideUp" data-out="slideUp"
+                                     data-duration="800">
+                                    <a class="tg-btn" href="javascript:void(0);">Sign Up</a>
+                                    <a class="tg-btn tg-active" href="javascript:void(0);">Log In</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="pogoSlider-slide" data-transition="fade" data-duration="1500"
-             style="background:url(images/slider/img-01.jpg) no-repeat scroll 0 0;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
-                        <div class="tg-slidercontent">
-                            <h1 class="pogoSlider-slide-element" data-in="flipX" data-out="flipX" data-duration="800">
-                                Business And Financial<span>Planning Services</span></h1>
-                            <div class="tg-description pogoSlider-slide-element" data-in="slideLeft"
-                                 data-out="slideRight" data-duration="1800">
-                                <p>Helping businesses to find best solutions<span>with over 12 year of experience</span>
-                                </p>
-                            </div>
-                            <div class="tg-btns pogoSlider-slide-element" data-in="slideUp" data-out="slideUp"
-                                 data-duration="800">
-                                <a class="tg-btn" href="javascript:void(0);">Sign Up</a>
-                                <a class="tg-btn tg-active" href="javascript:void(0);">Log In</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
+
     <!--************************************
             Home Slider End
     *************************************-->
@@ -374,6 +331,31 @@
                                 </div>
                             </div>
                         </div>
+                        @foreach($ServiceData  as $key => $service)
+                            <div class="tg-plan" id="{{++$key}}">
+                                <figure class="tg-planimg"><img
+                                            src="{{asset('/images/services/'.$service->serviceimage)}}"
+                                            alt="image-description" style="width:100%; height:250px"></figure>
+                                <div class="tg-plancontent">
+                                    <span class="tg-planicon lnr lnr-pointer-right"></span>
+                                    <div class="tg-titledescription">
+                                        <div class="tg-plantitle">
+                                            <h3>{{$service->servicename}}</h3>
+                                        </div>
+                                        <div class="tg-description">
+                                            <p>{{$service->servicedetail}}</p>
+                                        </div>
+                                        <div>
+                                            <ul class="tg-serviceinfo searchservice">
+                                                <li>
+                                                    <button class="tg-btnregular">Let's Go!</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -387,56 +369,28 @@
                         <div class="tg-sectiontitle">
                             <h2 class="">We Also Provide Combo Service Packages</h2>
                         </div>
-                        <div class="row">
-                            <div class="tg-packages">
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="tg-package">
-                                        <h3>Basic</h3>
-                                        <h4>from <span>$10.00</span> per month</h4>
-                                        <ul>
-                                            <li>Consectetur</li>
-                                            <li>Adipisicing elit</li>
-                                            <li>Sed eiusmod tempor</li>
-                                            <li>Incididunt ut labore</li>
-                                            <li>Dolore magna</li>
-                                        </ul>
-                                        <a class="tg-btnregular" href="#">Buy Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="tg-package">
-                                        <span class="tg-tagfeatured"><i class="fa fa-bolt"></i></span>
-                                        <h3>Silver</h3>
-                                        <h4>from <span>$15.00</span> per month</h4>
-                                        <ul>
-                                            <li>Consectetur</li>
-                                            <li>Adipisicing elit</li>
-                                            <li>Sed eiusmod tempor</li>
-                                            <li>Incididunt ut labore</li>
-                                            <li>Dolore magna</li>
-                                        </ul>
-                                        <a class="tg-btnregular" href="#">Buy Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                    <div class="tg-package">
-                                        <h3>Gold</h3>
-                                        <h4>from <span>$25.00</span> per month</h4>
-                                        <ul>
-                                            <li>Consectetur</li>
-                                            <li>Adipisicing elit</li>
-                                            <li>Sed eiusmod tempor</li>
-                                            <li>Incididunt ut labore</li>
-                                            <li>Dolore magna</li>
-                                        </ul>
-                                        <a class="tg-btnregular" href="#">Buy Now</a>
-                                    </div>
+                        @foreach($PackageData as $key => $package)
+                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" id="{{++$key}}">
+                                <div class="tg-package">
+                                    <span class="tg-tagfeatured"></span>
+                                    <h3>{{$package->packagename}}</h3>
+                                    <h4>from <span> $ {{$package->packageprice}} </span> per month</h4>
+                                    <ul>
+                                        <li>{{$package->packageservice1}}</li>
+                                        <li>{{$package->packageservice2}}</li>
+                                        <li>{{$package->packageservice3}}</li>
+                                        <li>{{$package->packageservice4}}</li>
+                                        <li>{{$package->packageservice4}}</li>
+                                    </ul>
+                                    <a class="tg-btnregular" href="#">Buy Now</a>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
 
         <!--************************************
@@ -460,7 +414,6 @@
                                         aliqua minim veniam quis nostrud exercitation ullamco laboris aliquip commodo
                                         consequat aute irure.</p>
                                 </div>
-                                <a class="tg-btnregular" href="javascript:void(0);">View All</a>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 tg-verticalmiddle">
@@ -646,87 +599,31 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="tg-latestcases">
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="tg-case">
-                                <figure class="tg-caseimg">
-                                    <a href="#"><img src="images/cases/img-01.jpg" alt="image description"></a>
-                                    <time datetime="2016-10-10"><span>22</span>May</time>
-                                </figure>
-                                <div class="tg-casecontent">
-                                    <div class="tg-title">
-                                        <h3><a href="#">Leading Youth To Bright</a></h3>
-                                    </div>
-                                    <span class="tg-category">Surface Transport &amp; Logistics</span>
-                                    <div class="tg-description">
-                                        <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
-                                    </div>
-                                    <div class="tg-btnreadmorebox">
-                                        <a class="tg-readmore" href="#">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="tg-case">
-                                <figure class="tg-caseimg">
-                                    <a href="#"><img src="images/cases/img-02.jpg" alt="image description"></a>
-                                    <time datetime="2016-10-10"><span>22</span>May</time>
-                                </figure>
-                                <div class="tg-casecontent">
-                                    <div class="tg-title">
-                                        <h3><a href="#">Leading Youth To Bright</a></h3>
-                                    </div>
-                                    <span class="tg-category">Surface Transport &amp; Logistics</span>
-                                    <div class="tg-description">
-                                        <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
-                                    </div>
-                                    <div class="tg-btnreadmorebox">
-                                        <a class="tg-readmore" href="#">read more</a>
+                        @foreach($CaseData as $key => $case)
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" id="{{++$key}}">
+                                <div class="tg-case">
+                                    <figure class="tg-caseimg">
+                                        <a href="#"><img class="img-responsive" src="{{asset('/images/cases/'.$case->caseimage)}}"
+                                                         style="width:100%; height:207px;" alt="image description"></a>
+                                        <time datetime="2016-10-10"><span>22</span>May</time>
+                                    </figure>
+                                    <div class="tg-casecontent">
+                                        <div class="tg-title">
+                                            <h3>{{$case->casename}}</h3>
+                                        </div>
+                                        <span class="tg-category">{{$case->casecategory}}</span>
+                                        <div class="tg-description">
+                                            <p>{{$case->casedetail}}</p>
+                                        </div>
+                                        <div class="tg-btnreadmorebox">
+                                            <a class="tg-readmore" href="#">read more</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="tg-case">
-                                <figure class="tg-caseimg">
-                                    <a href="#"><img src="images/cases/img-03.jpg" alt="image description"></a>
-                                    <time datetime="2016-10-10"><span>22</span>May</time>
-                                </figure>
-                                <div class="tg-casecontent">
-                                    <div class="tg-title">
-                                        <h3><a href="#">Leading Youth To Bright</a></h3>
-                                    </div>
-                                    <span class="tg-category">Surface Transport &amp; Logistics</span>
-                                    <div class="tg-description">
-                                        <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
-                                    </div>
-                                    <div class="tg-btnreadmorebox">
-                                        <a class="tg-readmore" href="#">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                            <div class="tg-case">
-                                <figure class="tg-caseimg">
-                                    <a href="#"><img src="images/cases/img-04.jpg" alt="image description"></a>
-                                    <time datetime="2016-10-10"><span>22</span>May</time>
-                                </figure>
-                                <div class="tg-casecontent">
-                                    <div class="tg-title">
-                                        <h3><a href="#">Leading Youth To Bright</a></h3>
-                                    </div>
-                                    <span class="tg-category">Surface Transport &amp; Logistics</span>
-                                    <div class="tg-description">
-                                        <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
-                                    </div>
-                                    <div class="tg-btnreadmorebox">
-                                        <a class="tg-readmore" href="#">read more</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -781,100 +678,50 @@
                         </div>
                     </div>
                     <div id="tg-testimonialsslider" class="tg-testimonialsslider tg-testimonials">
-                        <div class="item tg-testimonial">
-                            <div class="row">
-                                <div class="col-xs-12 col-sm-6 tg-verticalmiddle">
-                                    <blockquote>
-                                        <q>Adipisicing elit sed eiusmod teampor intcididunt labore dolore magna aliqua
-                                            enim minim veniam sectetur adipisicing elit sed do eiusmod.</q>
-                                    </blockquote>
-                                    <div class="tg-clientinfo">
-                                        <figure class="tg-companylogo"><a href="#"><img src="images/brands/img-13.png"
-                                                                                        alt="image description"></a>
-                                        </figure>
-                                        <div class="tg-reviewerinfo">
-                                            <figure class="tg-reviewerdp"><a href="#"><img
-                                                            src="images/authors/img-03.jpg" alt="image description"></a>
+                        @foreach($TestimonyData as $key => $testimony)
+                            <div class="item tg-testimonial" id="{{++$key}}">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 tg-verticalmiddle">
+                                        <blockquote>
+                                            <q>{{$testimony->testimony}}</q>
+                                        </blockquote>
+                                        <div class="tg-clientinfo">
+                                            <figure class="tg-companylogo"><a href="#"><img
+                                                            src="{{asset('/images/testimonials/'.$testimony->clientcompanylogo)}}"
+                                                            alt="image description"
+                                                            style="width:100px; height:30px;"></a>
                                             </figure>
-                                            <div class="tg-nameanddesignation">
-                                                <strong>Mirian Worthey</strong>
-                                                <span>C.E.O Loudmakers</span>
+                                            <div class="tg-reviewerinfo">
+                                                <figure class="tg-reviewerdp"><a href="#"><img
+                                                                src="{{asset('/images/testimonials/'.$testimony->testownerimage)}}"
+                                                                alt="image description"
+                                                                style="width:50px; height:50px;"></a>
+                                                </figure>
+                                                <div class="tg-nameanddesignation">
+                                                    <strong>{{$testimony->testowner}}</strong>
+                                                    <span>{{$testimony->testownerinfo}}</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 tg-verticalmiddle">
-                                    <div class="tg-videoshortcode">
-                                        <figure><img src="images/placeholder2.jpg" alt="image description"></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item tg-testimonial">
-                            <div class="row">
-                                <div class="col-sm-6 tg-verticalmiddle">
-                                    <blockquote>
-                                        <q>Adipisicing elit sed eiusmod teampor intcididunt labore dolore magna aliqua
-                                            enim minim veniam sectetur adipisicing elit sed do eiusmod.</q>
-                                    </blockquote>
-                                    <div class="tg-clientinfo">
-                                        <figure class="tg-companylogo"><a href="#"><img src="images/brands/img-13.png"
-                                                                                        alt="image description"></a>
-                                        </figure>
-                                        <div class="tg-reviewerinfo">
-                                            <figure class="tg-reviewerdp"><a href="#"><img
-                                                            src="images/authors/img-03.jpg" alt="image description"></a>
+                                    <div class="col-xs-12 col-sm-6 tg-verticalmiddle">
+                                        <div class="tg-videoshortcode">
+                                            <figure><img
+                                                        src="{{asset('/images/testimonials/'.$testimony->testheroimage)}}"
+                                                        alt="image description" style="width:570px; height:321px;">
                                             </figure>
-                                            <div class="tg-nameanddesignation">
-                                                <strong>Mirian Worthey</strong>
-                                                <span>C.E.O Loudmakers</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 tg-verticalmiddle">
-                                    <div class="tg-videoshortcode">
-                                        <figure><img src="images/placeholder2.jpg" alt="image description"></figure>
-                                    </div>
-                                </div>
                             </div>
-                        </div>
-                        <div class="item tg-testimonial">
-                            <div class="row">
-                                <div class="col-sm-6 tg-verticalmiddle">
-                                    <blockquote>
-                                        <q>Adipisicing elit sed eiusmod teampor intcididunt labore dolore magna aliqua
-                                            enim minim veniam sectetur adipisicing elit sed do eiusmod.</q>
-                                    </blockquote>
-                                    <div class="tg-clientinfo">
-                                        <figure class="tg-companylogo"><a href="#"><img src="images/brands/img-13.png"
-                                                                                        alt="image description"></a>
-                                        </figure>
-                                        <div class="tg-reviewerinfo">
-                                            <figure class="tg-reviewerdp"><a href="#"><img
-                                                            src="images/authors/img-03.jpg" alt="image description"></a>
-                                            </figure>
-                                            <div class="tg-nameanddesignation">
-                                                <strong>Mirian Worthey</strong>
-                                                <span>C.E.O Loudmakers</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 tg-verticalmiddle">
-                                    <div class="tg-videoshortcode">
-                                        <figure><img src="images/placeholder2.jpg" alt="image description"></figure>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </section>
-               <!--************************************
-                Trusted By Many Start
-        *************************************-->
+        <!--************************************
+         Trusted By Many Start
+ *************************************-->
         <section class="tg-main-section tg-haslayout tg-parallaximg" data-appear-top-offset="600" data-parallax="scroll"
                  data-image-src="images/parallax/bgparallax-04.jpg">
             <div class="container">
@@ -892,54 +739,14 @@
                         </div>
                     </div>
                     <div class="tg-brands">
+                        @foreach($TestimonyData as $key => $testimony)
                         <div class="tg-brand">
                             <figure>
-                                <img src="images/brands/img-01.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
+                                <img src="{{asset('/images/testimonials/'.$testimony->clientcompanylogo)}}" alt="image description" style="width:63px; height:61px;">
+                                <figcaption>{{$testimony->testownerinfo}}</figcaption>
                             </figure>
                         </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-02.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-03.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-04.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-05.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-06.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-07.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
-                        <div class="tg-brand">
-                            <figure>
-                                <img src="images/brands/img-08.png" alt="image description">
-                                <figcaption>Company Name</figcaption>
-                            </figure>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -963,63 +770,38 @@
                                     <p>Consectetur adipisicing elitia eiusmod tempor veniam quis incididunt utnaitas
                                         labore etolore magna aliqua minim nostrud exercitation ullamco.</p>
                                 </div>
-                                <a class="tg-btnregular" href="#">View All</a>
+                                <a class="tg-btnregular" href="{{route('news')}}">View All</a>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                        @foreach($newses as $key => $news)
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4" id="{{++$key}}">
                             <article class="tg-post">
-                                <figure><a href="#"><img src="images/blog/img-01.png" alt="image description"></a>
+                                <figure><a href="{{route('single-news',$news->id)}}"><img src="{{asset('/images/news/'.$news->newsimage)}}" alt="image description" style="width:100%; height:201px;"></a>
                                 </figure>
                                 <div class="tg-postcontent">
                                     <div class="tg-authordp">
                                         <a href="#">
-                                            <img src="images/authors/img-01.jpg" alt="image description">
+                                            <img src="{{asset('/images/news/'.$news->newsauthorimage)}}" alt="image description" style="width:50px;height:50px;" >
                                         </a>
                                     </div>
                                     <div class="tg-contentbox">
                                         <div class="tg-title">
-                                            <h3><a href="#">10 Ways To Make Profit</a></h3>
+                                            <h3><a href="{{route('single-news',$news->id)}}">{{$news->newsheading}}</a></h3>
                                         </div>
                                         <ul class="tg-metadata tg-postmetadata">
                                             <li>
                                                 <i class="lnr lnr-user"></i>
-                                                <span>Posted By: <a href="#">Maragret Mchenry</a></span>
+                                                <span>Posted By: {{$news->newsauthor}} </span>
                                             </li>
                                         </ul>
                                         <div class="tg-description">
-                                            <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
+                                            <p>{{$news->newsdetail}}</p>
                                         </div>
                                     </div>
                                 </div>
                             </article>
                         </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                            <article class="tg-post">
-                                <figure><a href="#"><img src="images/blog/img-02.png" alt="image description"></a>
-                                </figure>
-                                <div class="tg-postcontent">
-                                    <div class="tg-authordp">
-                                        <a href="#">
-                                            <img src="images/authors/img-02.jpg" alt="image description">
-                                        </a>
-                                    </div>
-                                    <div class="tg-contentbox">
-                                        <div class="tg-title">
-                                            <h3><a href="#">Make Your Future Bright</a></h3>
-                                        </div>
-                                        <ul class="tg-metadata tg-postmetadata">
-                                            <li>
-                                                <i class="lnr lnr-user"></i>
-                                                <span>Posted By: <a href="#">Maragret Mchenry</a></span>
-                                            </li>
-                                        </ul>
-                                        <div class="tg-description">
-                                            <p>Consectetur adipisicing elit eiusmod tempor incididunt utnai labore.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

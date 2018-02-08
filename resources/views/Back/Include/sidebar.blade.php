@@ -12,7 +12,7 @@
             <div class="sidebar-wrapper">
                 <div class="logo">
                     <a href="{{route('admin')}}" class="simple-text">
-                        Businessmantra
+                        BusinessMantra
                     </a>
                 </div>
 
@@ -36,9 +36,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('user-update')}}">
+                        <a href="{{route('manage-page')}}">
                             <i class="ti-write"></i>
-                            <p>Add Pages</p>
+                            <p>Manage Site</p>
                         </a>
                     </li>
                     <li>
@@ -49,11 +49,10 @@
                     </li>
                     <li>
                         <a href="{{route('client-detail')}}">
-                            <i class="ti-save"></i>
+                            <i class="ti-harddrives"></i>
                             <p>Client Details</p>
                         </a>
                     </li>
-                    <li>
                 </ul>
             </div>
         </div>

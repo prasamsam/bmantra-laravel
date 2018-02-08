@@ -73,10 +73,12 @@
                                     <li class="dropdown">
                                         <a href="" class="dropdown-toggle" data-toggle="dropdown" id="userdropdown"
                                            aria-haspopup="true" aria-expanded="false"><img class="img-thumbnail"
-                                                                                           src="images/cartimg/img-02.png"></a>
+                                                                                           src="{{URL::to('images/clients/'.$ClientData->image)}}"></a>
                                         <ul class="dropdown-menu dropdown-menu-right userdropdown"
                                             aria-labelledby="userdropdown">
-                                            <li class="col-lg-pull-1"><a href="#">Change Profile Picture</a></li>
+                                            <li class="col-lg-pull-1" >
+                                                <a href="#" data-toggle="modal" data-target="#picuploadmodal">Change Profile Picture</a>
+                                            </li>
                                             <li><a href="{{route('client-setting')}}">Settings</a></li>
                                             <li><a href="{{route('client-logout')}}">Log Out</a></li>
                                         </ul>
@@ -96,9 +98,11 @@
                                 <div id="tg-navigation"
                                      class="tg-widget tg-widgetmenu collapse navbar-collapse tg-navigation">
                                     <ul class="nav hidden-lg hidden-md hidden-sm">
-                                        <li><a href="eventdetail.html">Change Profile Picture</a></li>
-                                        <li><a href="eventdetail-v2.html">Settings</a></li>
-                                        <li><a href="eventdetail.html">Log Out</a></li>
+                                        <li>
+                                            <a href="#" data-toggle="modal" data-target="#picuploadmodal">Change Profile Picture</a>
+                                        </li>
+                                        <li><a href="{{route('client-setting')}}">Settings</a></li>
+                                        <li><a href="{{route('client-logout')}}">Log Out</a></li>
                                     </ul>
                                 </div>
                             </nav>
