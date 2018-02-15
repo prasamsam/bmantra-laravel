@@ -321,5 +321,15 @@ class AppController extends FrontController
         }
     }
 
+    public function abnRegistrationSoletrader(){
+        try{
+            $this->data('title',$this->title('ABN Sole Trader'));
+        }catch(\Exception $e){
+            die($e->getMessage());
+        }finally{
+            return view($this->page.'.Forms.abnformsole',$this->data);
+        }
+    }
+
 
 }

@@ -146,7 +146,7 @@
                                     <div>
                                         <ul class="tg-serviceinfo searchservice">
                                             <li>
-                                                <button class="tg-btnregular">Let's Go!</button>
+                                                <a href="{{route('form-abn')}}" class="tg-btnregular">Let's Go!</a>
                                             </li>
                                         </ul>
                                     </div>

@@ -34,7 +34,7 @@
                                                   placeholder="Type service price"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <a href="" type="button" class="btn btn-default">Close</a>
+                                        <a href="{{route('manage-home')}}" type="button" class="btn btn-default">Close</a>
                                         <button type="submit" class="btn btn-primary">Add</button>
                                     </div>
                                 </form>

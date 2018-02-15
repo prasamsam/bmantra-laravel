@@ -13,6 +13,8 @@ Route::group(['namespace'=>'Front'],function(){
    Route::get('signup','AppController@ClientSignUp')->name('signup');
    Route::post('signup','AppController@ClientSignUpAction');
    Route::get('/logout','AppController@logout')->name('client-logout');
+   Route::get('/forms/abn-registration-sole-trader','AppController@abnRegistrationSoleTrader')->name('form-abn');
+
 
 });
 
