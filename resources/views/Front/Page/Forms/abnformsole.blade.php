@@ -38,13 +38,12 @@
                             <h2>Tabs Style</h2>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="tg-themetabs tg-themetabsstyleone">
                                     <ul class="tg-themetabnav" role="tablist">
-                                        <li role="presentation" class="active"><a href="#oursolution" aria-controls="oursolution" role="tab" data-toggle="tab">Our Solution</a></li>
-                                        <li role="presentation"><a href="#ourmission" aria-controls="ourmission" role="tab" data-toggle="tab">Our Mission</a></li>
-                                        <li role="presentation"><a href="#ourtechnology" aria-controls="ourtechnology" role="tab" data-toggle="tab">Our Technology</a></li>
-                                        <li role="presentation"><a href="#ourspecification" aria-controls="ourspecification" role="tab" data-toggle="tab">Our Specification</a></li>
+                                        <li role="presentation" class="active"><a href="#oursolution" aria-controls="oursolution" role="tab" data-toggle="tab">Sole Trader</a></li>
+                                        <li role="presentation"><a href="#ourmission" aria-controls="ourmission" role="tab" data-toggle="tab">Partnership</a></li>
+                                        <li role="presentation"><a href="#ourtechnology" aria-controls="ourtechnology" role="tab" data-toggle="tab">Company</a></li>
                                     </ul>
                                     <div class="tab-content tg-themetabcontent">
                                         <div role="tabpanel" class="tab-pane active" id="oursolution">
