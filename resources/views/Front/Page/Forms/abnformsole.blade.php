@@ -94,65 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                <div class="tg-themetabs tg-themetabsstyletwo">
-                                    <ul class="tg-themetabnav" role="tablist">
-                                        <li role="presentation" class="active"><a href="#oursolutionone" aria-controls="oursolutionone" role="tab" data-toggle="tab">Our Solution</a></li>
-                                        <li role="presentation"><a href="#ourmissionone" aria-controls="ourmissionone" role="tab" data-toggle="tab">Our Mission</a></li>
-                                        <li role="presentation"><a href="#ourtechnologyone" aria-controls="ourtechnologyone" role="tab" data-toggle="tab">Our Technology</a></li>
-                                    </ul>
-                                    <div class="tab-content tg-themetabcontent">
-                                        <div role="tabpanel" class="tab-pane active" id="oursolutionone">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-01.jpg" alt="image description"></figure></div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-02.jpg" alt="image description"></figure></div>
-                                                </div>
-                                            </div>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane" id="ourmissionone">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-02.jpg" alt="image description"></figure></div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-01.jpg" alt="image description"></figure></div>
-                                                </div>
-                                            </div>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane" id="ourtechnologyone">
-                                            <div class="row">
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-01.jpg" alt="image description"></figure></div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                    <div class="tg-imgshortcode"><figure><img src="images/shortcode/img-02.jpg" alt="image description"></figure></div>
-                                                </div>
-                                            </div>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
 
                         <div class="container">
