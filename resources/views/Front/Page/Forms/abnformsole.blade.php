@@ -41,73 +41,55 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="tg-themetabs tg-themetabsstyleone">
                                     <ul class="tg-themetabnav" role="tablist">
-                                        <li role="presentation" class="active"><a href="#oursolution" aria-controls="oursolution" role="tab" data-toggle="tab">Sole Trader</a></li>
-                                        <li role="presentation"><a href="#ourmission" aria-controls="ourmission" role="tab" data-toggle="tab">Partnership</a></li>
-                                        <li role="presentation"><a href="#ourtechnology" aria-controls="ourtechnology" role="tab" data-toggle="tab">Company</a></li>
+                                        <li role="presentation" class="active"><a href="#abnsole" aria-controls="abnsole" role="tab" data-toggle="tab">Sole Trader</a></li>
+                                        <li role="presentation"><a href="#abnpartnership" aria-controls="abnpartnership" role="tab" data-toggle="tab">Partnership</a></li>
+                                        <li role="presentation"><a href="#abncompany" aria-controls="abncompany" role="tab" data-toggle="tab">Company</a></li>
                                     </ul>
                                     <div class="tab-content tg-themetabcontent">
-                                        <div role="tabpanel" class="tab-pane active" id="oursolution">
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Claritas est etiam processus dynamicus</li>
-                                                <li>Qui sequitur mutationem consuetudium lectorum</li>
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
+                                        <div role="tabpanel" class="tab-pane active" id="abnsole">
+                                            <div class="container">
+                                                <form action="" method="">
+                                                    <div class="row">
+                                                        <div class="col-md-12 ">
+                                                            <div class="form-group col-md-1">
+                                                                <select  class="form-control" name="title" id="title">
+                                                                    <option value="1">Mr</option>
+                                                                    <option value="2">Miss</option>
+                                                                    <option value="3">Mrs</option>
+                                                                </select>
+                                                            </div>
+                                                    <div class="form-group col-md-3">
+                                                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Your First Name">
+                                                    </div>
+
+                                                            <div class="form-group col-md-3">
+                                                                <input type="text" class="form-control" id="name" name="middlename" placeholder="Enter Your Middle Name">
+                                                            </div>
+
+                                                            <div class="form-group col-md-3">
+                                                                <input type="text" class="form-control" id="name" name="lastname" placeholder="Enter Your Last Name">
+                                                            </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" id="Username" name="Username" placeholder="Enter Your Username">
+                                                    </div>
+                                                </form>
+                                            </div>
+
                                         </div>
-                                        <div role="tabpanel" class="tab-pane" id="ourmission">
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Claritas est etiam processus dynamicus</li>
-                                                <li>Qui sequitur mutationem consuetudium lectorum</li>
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
+                                        <div role="tabpanel" class="tab-pane" id="abnpartnership">
+
+                                            </div>
+                                        <div role="tabpanel" class="tab-pane" id="abncompany">
+
                                         </div>
-                                        <div role="tabpanel" class="tab-pane" id="ourtechnology">
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Claritas est etiam processus dynamicus</li>
-                                                <li>Qui sequitur mutationem consuetudium lectorum</li>
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane" id="ourspecification">
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                            <ul class="tg-liststyle tg-dotliststyle">
-                                                <li>Claritas est etiam processus dynamicus</li>
-                                                <li>Qui sequitur mutationem consuetudium lectorum</li>
-                                                <li>Mirum est notare quamiat littera</li>
-                                                <li>Gothica quam nunc putamus parum claram</li>
-                                                <li>Anteposuerit litterarum</li>
-                                            </ul>
-                                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt labore alore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exia ea commodo consequat.</p>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
-                        <div class="container">
-                            <h3>Personal Detail</h3>
-                            <form action="" method="post">
-
-                                <div class="form-group">
-                                    <label for="">Name</label>
-                                    <input type="text" name="name" id="name">
-                                </div>
-
-                            </form>
-                        </div>
-
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 pull-left">
                         <aside id="tg-sidebar" class="tg-sidebar">
