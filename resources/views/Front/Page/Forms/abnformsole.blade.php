@@ -47,7 +47,6 @@
                                     </ul>
                                     <div class="tab-content tg-themetabcontent">
                                         <div role="tabpanel" class="tab-pane active" id="abnsole">
-                                            <div class="container-fluid">
                                                 <form action="" method="">
                                                     <div class="row">
                                                         <div class="col-md-12 ">
@@ -78,7 +77,6 @@
                                                 </form>
                                             </div>
 
-                                        </div>
                                         <div role="tabpanel" class="tab-pane" id="abnpartnership">
 
                                             </div>
