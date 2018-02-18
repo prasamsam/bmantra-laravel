@@ -35,7 +35,7 @@
                 <div id="tg-twocolumns" class="tg-twocolumns">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 pull-right">
                         <div class="tg-shortcodetitle">
-                            <h2>Tabs Style</h2>
+                            <h2>Choose Your Business Type</h2>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -59,17 +59,17 @@
                                                                 </select>
                                                             </div>
                                                     <div class="form-group col-md-3 col-lg-3">
-                                                        <label for="firstname">First Name</label>
+                                                        <label for="firstname" class="form-control">First Name</label>
                                                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Your First Name">
                                                     </div>
 
                                                             <div class="form-group col-md-3 col-lg-3">
-                                                                <label for="middlename">Middle Name</label>
+                                                                <label for="middlename" class="form-control">Middle Name</label>
                                                                 <input type="text" class="form-control" id="name" name="middlename" placeholder="Enter Your Middle Name">
                                                             </div>
 
                                                             <div class="form-group col-md-3 col-lg-3">
-                                                                <label for="lastname">Last Name</label>
+                                                                <label for="lastname" class="form-control">Last Name</label>
                                                                 <input type="text" class="form-control" id="name" name="lastname" placeholder="Enter Your Last Name">
                                                             </div>
                                                     </div>
