@@ -50,22 +50,26 @@
                                                 <form action="" method="">
                                                     <div class="row">
                                                         <div class="col-md-12 ">
-                                                            <div class="form-group col-md-1">
+                                                            <div class="form-group col-md-1 col-lg-1">
+                                                                <label for="title">Title</label>
                                                                 <select  class="form-control" name="title" id="title">
                                                                     <option value="1">Mr</option>
                                                                     <option value="2">Miss</option>
                                                                     <option value="3">Mrs</option>
                                                                 </select>
                                                             </div>
-                                                    <div class="form-group col-md-3">
+                                                    <div class="form-group col-md-3 col-lg-3">
+                                                        <label for="firstname">First Name</label>
                                                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Your First Name">
                                                     </div>
 
-                                                            <div class="form-group col-md-3">
+                                                            <div class="form-group col-md-3 col-lg-3">
+                                                                <label for="middlename">Middle Name</label>
                                                                 <input type="text" class="form-control" id="name" name="middlename" placeholder="Enter Your Middle Name">
                                                             </div>
 
-                                                            <div class="form-group col-md-3">
+                                                            <div class="form-group col-md-3 col-lg-3">
+                                                                <label for="lastname">Last Name</label>
                                                                 <input type="text" class="form-control" id="name" name="lastname" placeholder="Enter Your Last Name">
                                                             </div>
                                                     </div>
