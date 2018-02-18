@@ -80,7 +80,7 @@
                                                 </div>
                                                 
                                                     <div class="row">
-                                                        <div class="col-md-6 col-lg-6">
+                                                        <div class="col-md-8 col-lg-8">
                                                 <div class="form-group col-md-2 col-lg-2">
                                                     <select name="day" id="day">
                                                         <option>Day</option>
