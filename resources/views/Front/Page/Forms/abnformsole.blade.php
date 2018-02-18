@@ -36,7 +36,7 @@
                 <div id="tg-twocolumns" class="tg-twocolumns">
                     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 pull-right">
                         <div class="tg-shortcodetitle">
-                            <h2>Choose Your Business Type</h2>
+                            <h4>Choose Your Business Type</h4>
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -120,7 +120,7 @@
                                                         <option>31</option>
                                                     </select> -
                                                 </div>
-                                                            <div class="form-group col-md-2 col-lg-2">
+                                                            <div class="form-group col-md-3 col-lg-3">
                                                                 <select name="month" id="month">
                                                                     <option>Month</option>
                                                                     <option>January</option>
