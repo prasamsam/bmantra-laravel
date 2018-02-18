@@ -45,7 +45,7 @@
                                         <li role="presentation"><a href="#abnpartnership" aria-controls="abnpartnership" role="tab" data-toggle="tab">Partnership</a></li>
                                         <li role="presentation"><a href="#abncompany" aria-controls="abncompany" role="tab" data-toggle="tab">Company</a></li>
                                     </ul>
-                                    <div class="tab-content tg-themetabcontent">
+                                    <div class="tab-content tg-themetabcontent col-md-12">
                                         <div role="tabpanel" class="tab-pane active" id="abnsole">
                                                 <form action="" method="">
                                                     <div class="row">
