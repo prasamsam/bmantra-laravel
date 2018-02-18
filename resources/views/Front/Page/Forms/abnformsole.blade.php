@@ -55,11 +55,11 @@
                                             <form action="" method="">
                                                 <div class="row">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <div class="form-group col-md-1 col-lg-2">
+                                                        <div class="form-group col-md-1 col-lg-1">
                                                             <select class="form-control" name="title" id="title">
-                                                                <option value="1">Mr</option>
-                                                                <option value="2">Miss</option>
-                                                                <option value="3">Mrs</option>
+                                                                <option>Mr</option>
+                                                                <option>Miss</option>
+                                                                <option>Mrs</option>
                                                             </select>
                                                         </div>
                                                         <div class="form-group col-md-3 col-lg-3">
