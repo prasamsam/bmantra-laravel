@@ -80,8 +80,8 @@
                                                 </div>
                                                 
                                                     <div class="row">
-                                                        <div class="col-md-12 col-lg-12">
-                                                <div class="form-group col-md-4 col-lg-4">
+                                                        <div class="col-md-6 col-lg-6">
+                                                <div class="form-group col-md-2 col-lg-2">
                                                     <select name="day" id="day">
                                                         <option>Day</option>
                                                         <option>1</option>
@@ -117,7 +117,7 @@
                                                         <option>31</option>
                                                     </select>
                                                 </div>
-                                                            <div class="form-group col-md-4 col-lg-4">
+                                                            <div class="form-group col-md-2 col-lg-2">
                                                                 <select name="month" id="month">
                                                                     <option>Month</option>
                                                                     <option>January</option>
@@ -134,7 +134,7 @@
                                                                     <option>December</option>
                                                                 </select>
                                                             </div>
-                                                            <div class="form-group col-md-4 col-lg-4">
+                                                            <div class="form-group col-md-2 col-lg-2">
                                                                 <select name="year" id="year">
                                                                     <option>Year</option>
                                                                     <option>1920</option>
