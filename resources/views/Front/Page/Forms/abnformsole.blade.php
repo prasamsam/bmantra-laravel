@@ -45,12 +45,12 @@
                                         <li role="presentation"><a href="#abnpartnership" aria-controls="abnpartnership" role="tab" data-toggle="tab">Partnership</a></li>
                                         <li role="presentation"><a href="#abncompany" aria-controls="abncompany" role="tab" data-toggle="tab">Company</a></li>
                                     </ul>
-                                    <div class="tab-content tg-themetabcontent col-md-12">
+                                    <div class="tab-content tg-themetabcontent col-md-12 col-lg-12">
                                         <div role="tabpanel" class="tab-pane active" id="abnsole">
                                                 <form action="" method="">
                                                     <div class="row">
                                                         <div class="col-md-12 ">
-                                                            <div class="form-group col-md-1">
+                                                            <div class="form-group col-md-2">
                                                                 <select  class="form-control" name="title" id="title">
                                                                     <option value="1">Mr</option>
                                                                     <option value="2">Miss</option>
