@@ -50,7 +50,7 @@
                                                 <form action="" method="">
                                                     <div class="row">
                                                         <div class="col-md-12 ">
-                                                            <div class="form-group col-md-2">
+                                                            <div class="form-group col-md-1">
                                                                 <select  class="form-control" name="title" id="title">
                                                                     <option value="1">Mr</option>
                                                                     <option value="2">Miss</option>
