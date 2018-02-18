@@ -55,24 +55,24 @@
                                             <form action="" method="">
                                                 <div class="row">
                                                     <div class="col-md-12 col-lg-12">
-                                                        <div class="form-group col-md-1 col-lg-1">
+                                                        <div class="form-group">
                                                             <select class="form-control" name="title" id="title">
                                                                 <option>Mr</option>
                                                                 <option>Miss</option>
                                                                 <option>Mrs</option>
                                                             </select>
                                                         </div>
-                                                        <div class="form-group col-md-3 col-lg-3">
+                                                        <div class="form-group">
                                                             <input type="text" class="form-control" id="firstname"
                                                                    name="firstname" placeholder="First Name">
                                                         </div>
 
-                                                        <div class="form-group col-md-3 col-lg-3">
+                                                        <div class="form-group">
                                                             <input type="text" class="form-control" id="middlename"
                                                                    name="middlename" placeholder="Middle Name">
                                                         </div>
 
-                                                        <div class="form-group col-md-3 col-lg-3">
+                                                        <div class="form-group">
                                                             <input type="text" class="form-control" id="lastname"
                                                                    name="lastname" placeholder="Last Name">
                                                         </div>
@@ -81,7 +81,10 @@
                                                 
                                                     <div class="row">
                                                         <div class="col-md-8 col-lg-8">
-                                                <div class="form-group col-md-2 col-lg-2">
+                                                            <div class="container">
+                                                                <h3>Enter Your Date of Birth</h3>
+                                                            </div>
+                                                <div class="form-group">
                                                     <select name="day" id="day">
                                                         <option>Day</option>
                                                         <option>1</option>
@@ -115,9 +118,9 @@
                                                         <option>29</option>
                                                         <option>30</option>
                                                         <option>31</option>
-                                                    </select>
+                                                    </select> -
                                                 </div>
-                                                            <div class="form-group col-md-2 col-lg-2">
+                                                            <div class="form-group">
                                                                 <select name="month" id="month">
                                                                     <option>Month</option>
                                                                     <option>January</option>
@@ -132,9 +135,9 @@
                                                                     <option>October</option>
                                                                     <option>November</option>
                                                                     <option>December</option>
-                                                                </select>
+                                                                </select> -
                                                             </div>
-                                                            <div class="form-group col-md-2 col-lg-2">
+                                                            <div class="form-group">
                                                                 <select name="year" id="year">
                                                                     <option>Year</option>
                                                                     <option>1920</option>
@@ -236,7 +239,7 @@
                                                                     <option>2016</option>
                                                                     <option>2017</option>
                                                                     <option>2018</option>
-                                                                </select>
+                                                                </select> -
                                                             </div>
                                                     </div>
                                                     </div>
